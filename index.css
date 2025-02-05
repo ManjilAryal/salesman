@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#salesman-image{
+    margin-top: 8%;
+}
+.salesman{
+    width: 100%;
+}
+.questions-div{
+    position: absolute;
+    width: 30%;
+    top: 25%;
+    left: 5%;
+    padding: 2%;
+    border: 1px solid rgb(240, 118, 139);
+    border-radius: 2%;
+    backdrop-filter: blur(10px);
+}
+.firstquestion{
+    font-size: x-large;
+    color: rgb(240, 118, 139);
+}
+.buttons{
+    border: 1px solid rgb(240, 118, 139);
+    background-color: rgb(240, 118, 139);
+    color: white;
+    padding: 2%;
+    font-size: large;
+    margin: 1%;
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: rgb(252, 149, 166);
+}
+input{
+    outline: none;
+    border: 1px solid rgb(240, 118, 139);
+    color: rgb(240, 118, 139);
+    padding: 2%;
+    font-size: large;
+}
+input::placeholder{
+    color: rgb(240, 118, 139);
+}
+.secondno.activesecondno{
+    display: block;
+}
+select{
+    outline: none;
+    padding: 2%;
+    font-size: large;
+    border: 1px solid rgb(240, 118, 139);
+    color: rgb(240, 118, 139);
+}
+.secondyes.activesecondyes,.right.activeright{
+    display: block;
+}
+.third.activethird,.payment.activepayment,.wrong.activewrong{
+    display: block;
+}
+.secondno,.secondyes,.first.replacefirst,.third,.payment,.wrong,.right{
+    display: none;
+}
+@media (max-width:425px){
+    .questions-div{
+        position: initial;
+        margin: 5%;
+        width: 100%;
+    }
+    .firstquestion{
+        font-size: auto;
+    }
+    input{
+        font-size: auto;
+    }
+    select{
+        font-size: auto;
+    }
+    
+}

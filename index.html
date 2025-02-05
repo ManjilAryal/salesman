@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="salesman-image">
+        <img src="salesman.jpg" alt="" class="salesman">
+    </div>
+    <div class="questions-div">
+        <div class="first">
+            <div class="question-box">
+                <p class="firstquestion">Hello, Sir.,<br>Would you play a game with me?</p>
+                </div>
+                <div class="buttons-box">
+                    <button class="buttons" id="Ok">Ok</button>
+                    <button class="buttons" id="No">No</button>
+                </div>        
+        </div>
+        <div class="secondno">
+            <div class="question-box">
+                <p class="firstquestion">Why not?<br>I will give you money if you win.</p>
+                </div>
+                <div class="buttons-box">
+                    <button class="buttons" id="Oksno">Ok</button>
+                    <button class="buttons" id="Nosno">No</button>
+                </div>        
+        </div>
+        <div class="secondyes">
+            <div class="question-box">
+                <p class="firstquestion">The rule is simple:<br><br>You have to guess a number from 1 to 10, and I will also guess a number. If we both guess the same number, you win.</p>
+                </div>
+                <div class="buttons-box">
+                    <button class="buttons" id="start">Start Game</button>
+                    <!-- <button class="firstdivbuttons" id="No">No</button> -->
+                </div>        
+        </div>
+        <div class="third">
+            <div class="question-box">
+                <p class="firstquestion">Guess a number from 1 to 10.</p>
+                </div>
+                <div class="input-div">
+                    <input type="number" id="guessinput">
+                    <button class="buttons" id="guessednumber">Guess</button>
+                </div>
+        </div>
+        <div class="wrong">
+                <p class="firstquestion" style="text-align: center;">wrong</p>
+                <button class="buttons" id="back">Back</button>
+        </div>
+        <div class="right">
+            <p class="firstquestion" style="text-align: center;">You Win</p>
+            <button class="buttons" id="price">Get Price</button>
+    </div>
+        <div class="payment">
+            <div class="question-box">
+                <p class="firstquestion">Enter payment method</p>
+                </div>
+                <div class="input-div">
+                    <select name="paymentmethod" id="paymentmethod">
+                        <option value="esewa" style="background-color: rgb(77, 223, 77); color: white;">Esewa</option>
+                        <option value="khalti" style="background-color: rgb(60, 28, 204); color: white;">Khalti</option>
+                        <option value="imepay" style="background-color: rgb(238, 26, 26); color: white;">IME Pay</option>
+                    </select>
+                    <input type="number" placeholder="Number" id="paymentnumber">
+                    <button class="buttons" id="selectpayment">Submit</button>
+                </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
